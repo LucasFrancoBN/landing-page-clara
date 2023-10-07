@@ -1,0 +1,43 @@
+.bg-main {
+  background-color: #d2f1fb;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 480px) {
+  .main {
+    display: block;
+  }
+}
+
+.main h1 {
+  margin-bottom: 1rem;
+  color: #3f3d56;
+}
+
+@media (max-width: 680px) {
+  .main .font-2-m {
+    font: var(--font-2-xs);
+  }
+}
+
+.main h1 span {
+  color: #07556d;
+}
+
+.main img {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .main img {
+    display: none;
+  }
+}

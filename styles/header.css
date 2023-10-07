@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 1rem;
+  color: #04465a;
+}
+
+@media (max-width: 500px) {
+  .header figure img {
+    height: 2.5rem;
+  }
+
+  .header nav ul {
+    font: var(--font-1-xxs);
+  }
+}
+
+@media (max-width: 350px) {
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .header nav ul {
+    font: var(--font-1-xs);
+  }
+  .header figure img {
+    height: 4rem;
+  }
+}
