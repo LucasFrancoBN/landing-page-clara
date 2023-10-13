@@ -1,3 +1,37 @@
 .vantagens {
+  padding: 2.5rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.vantagens > h1 {
+  margin-bottom: 2rem;
+  grid-column: 1 / -1;
+}
+
+.vantagem-especifica {
+  border: 2px solid #146781;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  align-items: center;
   padding: 1rem;
+}
+
+@media(max-width: 750px) {
+  .vantagens {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 500px) {
+  .vantagens {
+    grid-template-columns: 1fr;
+  }
+}
+
+.vantagem-especifica h2 {
+  text-align: center;
 }

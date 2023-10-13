@@ -1,0 +1,41 @@
+.depoimentos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem 1rem;
+  justify-content: space-between;
+  padding-bottom: 4.5rem;
+}
+
+@media(max-width: 800px) {
+  .depoimentos {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.depoimentos h1 {
+  grid-column: 1 / -1;
+}
+
+.depoimentos h1 span {
+  color: #07556d;
+}
+
+.depoimentos .depoimento {
+  max-width: 243px;
+  align-self: center;
+}
+
+.depoimentos .depoimento img {
+  max-width: 243px;
+  margin-bottom: 1rem;
+}
+
+.depoimentos .depoimento h2 {
+  color: #04465A;
+}
+
+.depoimentos .depoimento p {
+  word-break: break-all;
+  max-width: max-content;
+}

@@ -1,0 +1,54 @@
+.planos h1 {
+  margin-bottom: 1rem;
+}
+
+.wrapper-planos {
+  padding: 0 7.5rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2.5rem;
+}
+
+@media (max-width: 990px) {
+  .wrapper-planos {
+    padding: 0 3.75rem 2.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .wrapper-planos {
+    padding: 0 2rem 2.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .wrapper-planos {
+    padding: 0 0 2.5rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+.planos section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .75rem;
+  border-radius: 4px;
+  gap: .25rem;
+}
+
+.planos section ul li {
+  display: flex;
+  align-items: center;
+  gap: .125rem;
+}
+
+.planos .plano-free {
+  background-color: #D2F1FB;
+  color: #04465A;
+}
+
+.planos .plano-premium {
+  background-color: #04465A;
+  color: #D2F1FB;
+}
+
+
